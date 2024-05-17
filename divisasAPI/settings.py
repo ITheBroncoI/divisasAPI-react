@@ -80,10 +80,10 @@ WSGI_APPLICATION = 'divisasAPI.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'divisas',
+        'NAME': 'divisa_react',
         'USER': 'postgres',
-        'PASSWORD': '3004',
-        'HOST': 'localhost',
+        'PASSWORD': 'adom8a',
+        'HOST': '34.145.76.16',
         'PORT': '5432',
     }
 }
