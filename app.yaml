@@ -1,0 +1,21 @@
+runtime: python39
+
+handlers:
+- url: /static
+  static_dir: static/
+
+- url: /.*
+  script: auto
+
+env_variables:
+  DJANGO_SETTINGS_MODULE: divisasAPI.settings
+  SECRET_KEY: 'your-secret-key'
+  DEBUG: 'False'
+  ALLOWED_HOSTS: '*'
+  DB_NAME: 'divisas-react'
+  DB_USER: 'postgres'
+  DB_PASSWORD: 'adom8a'
+  DB_HOST: '35.202.165.142'
+  DB_PORT: '5432'
+
+entrypoint: gunicorn -b :$PORT divisasAPI.wsgi
